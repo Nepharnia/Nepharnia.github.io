@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Julie Quinty - Site web Perso</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                </div>
+                <nav>
+                    <ul>
+                        <p><b>Julie Quinty - BTS SIO SLAM</b></p>
+                        <li><a href="/index.html">Accueil</a></li>                       
+                        <li><a href="cv.html">Mon CV</a></li>
+                        <li><a href="competences.html">Portefeuille de compétences</a></li>
+                        <li><a href="veille.html">Veille Technologique</a></li>
+                    </ul>
+                </nav>
+            </header>
+			
+			<div id="connexion">
+            <!-- zone de connexion -->
+            <form action="/php/Profil/verification.php" method="POST">
+                <h1>Connexion</h1>
+                
+                <label><b>Nom d'utilisateur</b></label><br>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required/>
+				<br>
+				<br>
+                <label><b>Mot de passe</b></label><br>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required/>
+				<br>
+				<br>
+                <input type="submit" id='submit' class="bouton_validation" value='Connexion'/>
+				<br>
+                <form name="sauvegarde_mdp" method="POST" action="/php/Profil/sauvegarde.php">
+                <input name="sauvegarde" type="checkbox" cols="1" value="Oui"><br>
+                    <libellé>Si vous souhaitez sauvegarder votre mot de passe pour les prochaines connexion, cochez cette case</libellé><br>
+                <a href="/php/Profil/inscription.php"> Première visite ? Inscription </a>
+            </form>
+			</div>
+            
+            <footer>
+                <div id="bas_page">
+                    <a href="contact.html">Contact</a>
+                </div> 
+            </footer>
+    </body>
+</html>

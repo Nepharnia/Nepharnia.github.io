@@ -1,0 +1,140 @@
+/* Eléments principaux de la page */
+body
+{
+    background: url('/images/home.jpg') no-repeat;
+	background-attachment : fixed;
+    font-family: 'Trebuchet MS', Tahoma, sans-serif;
+    color: #181818;
+    margin:0; padding: 0;
+	display: table;
+	width:100%;
+    height:100%;
+
+}
+
+img
+{
+	max-width: 200px;
+	height: auto;
+}
+
+#bloc_page
+{
+    width: 100%;
+    margin: auto;
+}
+
+#droite
+{
+	position:relative;
+	float:right;
+	width: 10%;
+	padding-bottom: 10px;
+	margin-right: 5px;
+}
+
+.profil_perso
+{
+	list-style-type: none;
+	padding : 0.5%;
+	height : 50px;;
+	margin-right: 1%;
+	border-radius: 4px;
+}
+
+.menu_case
+{
+	display:inline-block;
+	width: 80%;
+	margin-left: 50px;
+	text-align: center;
+	margin-top:10%;
+}
+
+#resume
+{
+	width: 200px;
+	height:200px;
+	float:left;
+	border-radius: 4px;
+	margin-right:20px;
+	padding:5px;
+	background-color: rgba(239, 239, 239, 0.5);
+	Overflow:hidden
+}
+
+#calendrier
+{
+	width: 200px;
+	height:200px;
+	float:left;
+	border-radius: 4px;
+	margin-right:20px;
+	padding:5px;
+	Overflow:hidden;
+	background-color: rgba(239, 239, 239, 0.5);
+}
+#memo
+{
+	width: 200px;
+	height:200px;
+	float: left;
+	border-radius: 4px;
+	margin-right:20px;
+	padding:5px;
+	Overflow:hidden;
+	background-color: rgba(239, 239, 239, 0.5);
+}
+
+#retouraccueil
+{
+	width: 200px;
+	height:200px;
+	float: left;
+	border-radius: 4px;
+	margin-right:20px;
+	padding:5px;
+	Overflow:hidden;
+	background-color: rgba(239, 239, 239, 0.5);
+}
+
+#mes_informations
+{
+	width: 200px;
+	height:200px;
+	float: left;
+	border-radius: 4px;
+	margin-right:20px;
+	padding:5px;
+	Overflow:hidden;
+	background-color: rgba(239, 239, 239, 0.5);
+}
+
+form
+{
+	width: 60%;
+	margin:1%;
+	background-color: #CCEAFF;
+    border: 0.5px solid black;
+    box-shadow: 0px 2px 5px #CCEAFF;
+    left : 110px;
+}
+#flux_rss /* colonne de flux à droite*/
+{
+	width:17%;
+	position:relative;
+	margin-bottom:5px;
+	float:left;
+	right:10px;
+	background-color: rgba(113, 117, 117, 0.3);
+	box-shadow: 0px 2px 2px #1c1a19;
+	font-style:bold;
+}
+#flux_rss_OS /* colonne de flux à gauche*/
+{
+	width:17%;
+	position :absolute;
+	left: 18%;
+	background-color: rgba(113, 117, 117, 0.3);
+	box-shadow: 0px 2px 2px #1c1a19;
+}

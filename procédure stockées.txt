@@ -1,0 +1,23 @@
+Procédures Stockées : 
+
+Récupération de IdUsr :
+
+DELIMITER | 
+CREATE PROCEDURE recup_idUsr (IN mon_utilisateur CHAR(50), OUT idUsr_recup INT)
+BEGIN
+SELECT idUsr INTO idUsr_recup
+FROM authentification, avoir, user, infos 
+WHERE user.loginUsr = mon_utilisateur AND user.idUsr = infos.idUsrfk AND infos.idUsrfk = avoir.idUsr_fk AND avoir.idA_fk = authentification.idA;
+END |
+DELIMITER ;
+
+Récupération de IdA : 
+
+DELIMITER |
+CREATE PROCEDURE recup_idA (IN mon_utilisateur CHAR(50), OUT idA_recup INT)
+BEGIN
+SELECT idA INTO idA_recup
+FROM authentification, avoir, user, infos 
+WHERE user.loginUsr = mon_utilisateur AND user.idUsr = infos.idUsrfk AND infos.idUsrfk = avoir.idUsr_fk AND avoir.idA_fk = authentification.idA;
+END |
+DELIMITER ;

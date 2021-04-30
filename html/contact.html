@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Julie Quinty - Site web Perso</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                </div>
+                <nav>
+                    <ul>
+                        <p><b>Julie Quinty - BTS SIO SLAM</b></p>
+                        <li><a href="/index.html">Accueil</a></li>                       
+                        <li><a href="cv.html">Mon CV</a></li>
+                        <li><a href="competences.html">Portefeuille de compétences</a></li>
+                        <li><a href="veille.html">Veille Technologique</a></li>
+                    </ul>
+                </nav>
+            </header>
+			<div id="banniere_contact">
+				<img
+				src="/images/banniere_contact.jpg" alt="[banniere_contact]" height="231px" width="880px" 
+				/>
+			</div>
+
+            <div id="contact">
+					<b><h1>Contact</h1></b>
+					<br>
+					<form id="myForm" method="post" action="" >
+						<br><b>Nom (Obligatoire) *<br><input name="nom" id="nom" type="text" required >
+						<br>
+						<br>E-mail (Obligatoire) *<br><input name="mail" id="mail" type="text" required >
+						<br>
+						<br>Commentaire : (Obligatoire) *</b><br><textarea name="commentaire" id="commentaire" cols="18" rows="5" required style="margin: 0px; height: 250px;" ></textarea>
+						<br>
+						<br><div class="button"><button type="submit">Envoyer le message</button></div>
+					</form>
+					<?php
+						$to      = "quinty.julie@gmail.com";
+						$subject = "Message envoyé via le formulaire de contact";
+						$message = $_POST["commentaire"];
+						$headers = 'From:'$POST_["mail"] . "\r\n" .
+						 'X-Mailer: PHP/' . phpversion();
+
+						mail($to, $subject, $message, $headers);
+					?>
+			</div>
+            <footer>
+                <div id="bas_page">
+                    <a href="contact.html">Contact</a>
+                </div> 
+            </footer>
+        </div>
+    </body>
+</html>
